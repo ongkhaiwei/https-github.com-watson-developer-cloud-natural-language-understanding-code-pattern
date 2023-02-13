@@ -57,7 +57,7 @@ app.post('/api/analyze', async (req, res, next) => {
       { text: req.body.text, 
         features: analyzeParams.features}
     );
-    console.log(result)
+    // console.log(JSON.stringify(result))
     return res.json(result);
   } catch (error) {
     console.log(error);
